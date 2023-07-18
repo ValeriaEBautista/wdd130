@@ -1,0 +1,139 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    30deg,
+    #b0c963 20%,
+    #65cf87 30%,
+    #ccdc3e 50%,
+    #aede56 70%
+  );
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: 940px;
+  display: flex;
+  box-shadow: black 1px 1px 3px 1px;
+}
+
+.card-profile-picture {
+  width: 400px;
+}
+
+.card-content {
+  background-color: #ffffff;
+
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 70px;
+  padding-bottom: 46px;
+}
+
+.card-full-name {
+  font-family: "Roboto Serif", serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.card-content hr {
+  border: none;
+  height: 4px;
+  background-color: #000000;
+
+  margin-bottom: 20px;
+}
+
+.card-occupation {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 1.5rem;
+
+  margin-bottom: 40px;
+}
+
+.card-description {
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.card-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-container {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: #050505;
+  width: 15px;
+  height: 15px;
+}
+
+.box:nth-child(2) {
+  background-color: #848484;
+}
+
+.double-quotes img {
+  width: 40px;
+}
+
+.double-quotes img:last-child {
+  margin-bottom: 10px;
+}
+
+/* For responsiveness ----------------------------*/
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .card-profile-picture {
+    max-width: 100%;
+  }
+
+  .card-content {
+    padding: 5px 7px 10px;
+  }
+
+  .card-full-name {
+    font-size: 1.5rem;
+  }
+
+  .card-occupation {
+    font-size: 0.8rem;
+  }
+
+  .card-description {
+    font-size: 0.7rem;
+  }
+
+  .double-quotes img {
+    width: 15px;
+  }
+
+  .box {
+    width: 5px;
+    height: 5px;
+  }
+}
