@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font stylesheets-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <title>Branding signup</title>
+  </head>
+  <body>
+    <main class="card-container">
+      <img class="card-branding-img" src="./images/branding-image.jpg" alt="" />
+      <div class="card-content">
+        <img
+          class="close-button"
+          src="./images/x-icon.png"
+          alt="close-button"
+        />
+        <h1 class="card-title">How consistent is your branding?</h1>
+        <p class="card-description">
+          Download our brand touchpoints checklist to see all the places that
+          your brand needs to shine!
+        </p>
+        <form class="newsletter-form" action="">
+          <input type="email" id="email" placeholder="Email" name="email" />
+          <input type="text" id="name" placeholder="Name" name="name" />
+          <div>
+            <input type="checkbox" id="opt-in" name="opt-in" />
+            <label for="opt-in">Opt in to receive news and updates</label>
+          </div>
+          <button class="subscribe-btn">Subscribe</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,426 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+    /* 62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+hr {
+  margin: 0;
+}
+/* Nav Bar */
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d5bf86;
+  padding: 0 4rem;
+  height: 20rem;
+}
+
+.nav-bar img {
+  width: 11rem;
+  height: 11rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  cursor: pointer;
+  height: 100%;
+  width: 25rem;
+  color: #8d775f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  transition: 0.5s ease;
+}
+
+.nav-bar a:hover {
+  background-color: #a71d31;
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Hero */
+
+.hero-content {
+  background-image: url(/Images/DelishDish.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-content h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.hero-content button {
+  border: none;
+  background-color: #a71d31;
+  color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+
+.hero-content button:hover {
+  transform: scale(1.1);
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content h2 {
+  font-size: 5rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.home-body {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5rem;
+}
+
+.body-left {
+  margin-right: 2.5rem;
+  background-color: #a71d31;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: .5s ease;
+}
+
+.body-left:hover {
+  transform: scale(1.1);
+}
+
+.body-right {
+  margin-left: 2.5rem;
+  background-color: #a71d31;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  transition: .5s ease;
+}
+
+.body-right:hover {
+  transform: scale(1.1);
+}
+
+.hero-images {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0;
+}
+.image123 {
+  object-fit: cover;
+  width: 30rem;
+  height: 20rem;
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.hero-images p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  background-color: #d5bf86;
+}
+.footer-content {
+  height: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #8d775f;
+  margin: 4rem;
+  transition: 0.5s ease;
+}
+
+.footer-content a:hover {
+  color: #000000;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social img {
+  width: 3rem;
+  height: 3rem;
+  color: #8d775f;
+}
+
+.icon {
+  padding: 1rem;
+}
+
+/* How It Works */
+
+.hiw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiw-content {
+  padding: 05rem;
+}
+
+.hiw-content p {
+  font-size: 2rem;
+}
+
+.hiw-content h1 {
+  color: #000000;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.hiw img {
+  object-fit: cover;
+  width: 50vw;
+  height: 100vh;
+  margin: 0 2rem;
+}
+
+.offerings {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offerings img {
+  object-fit: cover;
+  width: 70vw;
+  height: 100vh;
+  margin: 0 2rem;
+}
+
+.we-offer {
+  background-color: #d5bf86;
+  color: #8d775f;
+  width: 30vw;
+  height: 100vh;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+
+.we-offer:hover {
+  background-color: #8d775f;
+  color: #d5bf86;
+}
+
+.we-offer h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.we-offer li {
+  list-style: none;
+  font-size: 3rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.we-offer li:hover {
+  color: #000000;
+}
+
+/* Recipe Catalog */
+
+.recipe-catalog {
+  margin: 10rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.recipe-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-right input {
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  background-color: lightgrey;
+  border: none;
+}
+
+.recipe-right button {
+  margin-top: 2rem;
+  border: none;
+  background-color: #fff;
+  color: #8d775f;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.recipe-right button:hover {
+  color: #000000;
+}
+
+.recipe-images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-line {
+  display: flex;
+}
+
+.recipe-images img {
+  width: 25rem;
+  height: 20rem;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.recipe-images img:hover {
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1024px) {
+  .nav-list {
+    width: 100vw;
+  }
+  .nav-list a {
+    padding: 0 1rem;
+    font-size: 1.75rem;
+  }
+  .home-body {
+    flex-direction: column;
+  }
+  .home-body {
+    padding: 0 1.75rem;
+  }
+  .body-left {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .body-right {
+    margin-left: 0;
+  }
+  .image123 {
+    width: 30rem;
+    height: 20rem;
+  }
+  .hero-images {
+    flex-direction: column;
+  }
+  .hiw {
+    flex-direction: column;
+  }
+  .hiw-content {
+    padding: 3rem;
+  }
+  .hiw-content h1 {
+    text-align: center;
+  }
+  .hiw img {
+    width: 90%;
+    height: 80vh;
+  }
+  .offerings {
+    flex-direction: column-reverse;
+  }
+  .offerings img {
+    width: 90%;
+    height: 80vh;
+  }
+  .we-offer {
+    width: 90%;
+    height: 80vh;
+  }
+  .recipe-right {
+    margin-top: 3rem;
+  }
+  .recipe-catalog {
+    flex-direction: column;
+  }
+  .image-line {
+    flex-direction: column;
+  }
+  .footer-content {
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer-content a {
+    margin: 2rem;
+  }
+}
